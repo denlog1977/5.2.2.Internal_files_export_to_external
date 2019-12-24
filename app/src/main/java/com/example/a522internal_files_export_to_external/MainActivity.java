@@ -156,14 +156,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private boolean getSharePref() {
-        try {
-            return preferences.getBoolean("external", false);
-        } catch (NullPointerException e) {
-            e.printStackTrace();
-            return false;
-        }
-
-    }
-
 }
